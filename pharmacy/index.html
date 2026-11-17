@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse everyday wellness essentials in the MediExpert demonstration pharmacy."
+    />
+    <title>Pharmacy — MediExpert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../" aria-label="MediExpert home"
+          ><span class="brand-mark">m+</span
+          ><span>Medi<span class="brand-accent">Expert</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../">Home</a
+          ><a class="active" href="../doctors">Find a doctor</a
+          ><a href="../pharmacy">Pharmacy</a
+          ><a href="../health">Health library</a>
+        </nav>
+        <a class="nav-cta" href="#appointment"
+          >Book an appointment <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="page-hero pharmacy-page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span> Everyday care, thoughtfully
+              chosen
+            </div>
+            <h1>Feel good about<br /><span>feeling good.</span></h1>
+            <p>
+              Explore a few everyday wellness essentials, selected with care.
+              Browse the demo shelf below.
+            </p>
+            <a class="button button-primary" href="#products"
+              >Browse essentials <span>↘</span></a
+            >
+          </div>
+          <div class="page-hero-image pharmacy-hero-image">
+            <div class="image-caption">
+              <span>✳</span> A little care goes a long way
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section product-section" id="products">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">The MediExpert shelf</div>
+              <h2>Everyday essentials.</h2>
+            </div>
+            <p>
+              Demo items for this student project. Always check with a qualified
+              pharmacist before using medicine.
+            </p>
+          </div>
+          <div class="shop-toolbar">
+            <div class="shop-categories">
+              <button
+                class="category-pill category-active"
+                type="button"
+                data-category-filter="all"
+                aria-pressed="true"
+              >
+                All essentials</button
+              ><button
+                class="category-pill"
+                type="button"
+                data-category-filter="wellness"
+                aria-pressed="false"
+              >
+                Wellness</button
+              ><button
+                class="category-pill"
+                type="button"
+                data-category-filter="personal-care"
+                aria-pressed="false"
+              >
+                Personal care</button
+              ><button
+                class="category-pill"
+                type="button"
+                data-category-filter="otc"
+                aria-pressed="false"
+              >
+                OTC
+              </button>
+            </div>
+            <label class="search-box"
+              ><span>⌕</span
+              ><input
+                id="product-search"
+                type="search"
+                placeholder="Search essentials..."
+                aria-label="Search products"
+            /></label>
+          </div>
+          <div class="product-grid">
+            <article
+              class="product-card"
+              data-category="wellness"
+              data-product="daily multivitamin wellness"
+            >
+              <div class="product-art product-art-green">
+                <span class="product-label">DAILY CARE</span>
+                <div class="bottle bottle-green">
+                  <span>daily<br />multi</span>
+                </div>
+                <span class="product-deco">✳</span>
+              </div>
+              <div class="product-info">
+                <div class="product-category">WELLNESS</div>
+                <h3>Daily Multivitamin</h3>
+                <p>A simple addition to a balanced routine.</p>
+                <div class="product-buy">
+                  <strong>$12.00</strong
+                  ><button
+                    class="add-to-cart"
+                    type="button"
+                    data-name="Daily Multivitamin"
+                  >
+                    Add to bag <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="personal-care"
+              data-product="gentle hand cream personal care"
+            >
+              <div class="product-art product-art-peach">
+                <span class="product-label">SOFT & SIMPLE</span>
+                <div class="tube tube-peach">
+                  <span>gentle<br />hand cream</span>
+                </div>
+                <span class="product-deco">✿</span>
+              </div>
+              <div class="product-info">
+                <div class="product-category">PERSONAL CARE</div>
+                <h3>Gentle Hand Cream</h3>
+                <p>A comforting, everyday moisturizing cream.</p>
+                <div class="product-buy">
+                  <strong>$8.50</strong
+                  ><button
+                    class="add-to-cart"
+                    type="button"
+                    data-name="Gentle Hand Cream"
+                  >
+                    Add to bag <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="wellness"
+              data-product="vitamin c wellness"
+            >
+              <div class="product-art product-art-yellow">
+                <span class="product-label">BRIGHT DAYS</span>
+                <div class="bottle bottle-yellow">
+                  <span>vitamin<br />c</span>
+                </div>
+                <span class="product-deco">✳</span>
+              </div>
+              <div class="product-info">
+                <div class="product-category">WELLNESS</div>
+                <h3>Vitamin C</h3>
+                <p>A familiar supplement for your wellness shelf.</p>
+                <div class="product-buy">
+                  <strong>$10.00</strong
+                  ><button
+                    class="add-to-cart"
+                    type="button"
+                    data-name="Vitamin C"
+                  >
+                    Add to bag <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="personal-care"
+              data-product="mineral sunscreen personal care"
+            >
+              <div class="product-art product-art-blue">
+                <span class="product-label">DAILY SHIELD</span>
+                <div class="tube tube-blue">
+                  <span>mineral<br />sunscreen</span>
+                </div>
+                <span class="product-deco">☼</span>
+              </div>
+              <div class="product-info">
+                <div class="product-category">PERSONAL CARE</div>
+                <h3>Mineral Sunscreen</h3>
+                <p>Daily sun protection for outdoor moments.</p>
+                <div class="product-buy">
+                  <strong>$14.00</strong
+                  ><button
+                    class="add-to-cart"
+                    type="button"
+                    data-name="Mineral Sunscreen"
+                  >
+                    Add to bag <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="otc"
+              data-product="saline nasal spray otc pharmacy"
+            >
+              <div class="product-art product-art-blue">
+                <span class="product-label">PHARMACY ESSENTIAL</span>
+                <div class="bottle bottle-saline">
+                  <span>saline<br />nasal spray</span>
+                </div>
+                <span class="product-deco">✳</span>
+              </div>
+              <div class="product-info">
+                <div class="product-category">OTC DEMO</div>
+                <h3>Saline Nasal Spray</h3>
+                <p>Illustrative over-the-counter pharmacy item.</p>
+                <div class="product-buy">
+                  <strong>$6.00</strong
+                  ><button
+                    class="add-to-cart"
+                    type="button"
+                    data-name="Saline Nasal Spray"
+                  >
+                    Add to bag <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="empty-search" id="empty-search" hidden>
+            No essentials match that search. Try another word.
+          </p>
+          <div class="pharmacy-disclaimer">
+            <span>ⓘ</span>
+            <p>
+              <strong>A note about medicines</strong><br />This is a school
+              project demo, not a real pharmacy. Products and prices are
+              illustrative, and this demo cannot process orders. Always follow
+              product labeling and ask a qualified pharmacist or healthcare
+              professional if you have questions about a medicine.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="cart-toast" role="status" aria-live="polite"></div>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="index.html"
+            ><span class="brand-mark">m+</span
+            ><span>Medi<span class="brand-accent">Expert</span></span></a
+          >
+          <p>A little more care, in all the right places.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong>Explore</strong><a href="../doctors">Find a doctor</a
+            ><a href="../pharmacy">Pharmacy</a
+            ><a href="../health">Health library</a>
+          </div>
+          <div>
+            <strong>Need help?</strong
+            ><a href="../doctors/#appointment">Book an appointment</a
+            ><a href="../health/#disclaimer">Health information</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 MediExpert · Student project</span
+        ><span>For learning and demonstration purposes only.</span>
+      </div>
+    </footer>
+  </body>
+</html>

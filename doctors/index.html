@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Meet the MediExpert care team and request a doctor appointment."
+      content="Browse public physician profiles published by Labaid Cardiac Hospital in Dhaka."
     />
     <title>Find a doctor — MediExpert</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/doctors.css" />
-    <script src="script.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -39,8 +39,8 @@
           ><a href="../pharmacy">Pharmacy</a
           ><a href="../health">Health library</a>
         </nav>
-        <a class="nav-cta" href="#appointment"
-          >Book an appointment <span>↗</span></a
+        <a class="nav-cta" href="#providers"
+          >View profiles <span>↘</span></a
         >
       </div>
     </header>
@@ -49,90 +49,97 @@
         <div class="container page-hero-inner">
           <div>
             <div class="eyebrow">
-              <span class="eyebrow-dot"></span> Care starts with a conversation
+              <span class="eyebrow-dot"></span> Public physician listings · Dhaka
             </div>
-            <h1>People first.<br /><span>Always.</span></h1>
+            <h1>Meet the<br /><span>physicians.</span></h1>
             <p>
-              Meet a team that takes the time to listen, understand, and help
-              you feel your best.
+              These profiles are published by Labaid Cardiac Hospital. Check
+              the official profile for current details and appointments.
             </p>
-            <a class="button button-primary" href="#appointment"
-              >Request an appointment <span>↘</span></a
+            <a class="button button-primary" href="#providers"
+              >Browse profiles <span>↘</span></a
             >
           </div>
           <div class="page-hero-image doctor-hero-image">
             <div class="image-caption">
-              <span class="mini-check">✓</span> Here to listen, here to help
+              <span class="mini-check">✓</span> Official profile links
             </div>
           </div>
         </div>
       </section>
-      <section class="section doctor-list-section">
+      <section class="section doctor-list-section" id="providers">
         <div class="container">
           <div class="section-heading">
             <div>
-              <div class="eyebrow">A good place to start</div>
-              <h2>Meet your care team.</h2>
+              <div class="eyebrow">Labaid Cardiac Hospital</div>
+              <h2>Physician profiles.</h2>
             </div>
             <p>
-              Our sample profiles are here to show how the service works.
-              Contact details and availability are for demonstration only.
+              Names and roles are taken from the hospital’s public directory.
+              Schedules and affiliations can change; confirm details directly
+              with the hospital.
             </p>
           </div>
           <div class="doctor-grid">
             <article class="doctor-card">
-              <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=85"
-                alt="Portrait of Dr. Ayesha Rahman"
-              />
-              <div class="doctor-info">
-                <span class="doctor-specialty">GENERAL PRACTICE</span>
-                <h3>Dr. Ayesha Rahman</h3>
-                <p>Thoughtful everyday care for adults and families.</p>
-                <div class="doctor-meta">
-                  <span>◷ &nbsp; 20–30 min visits</span
-                  ><a
-                    href="#appointment"
-                    aria-label="Request an appointment with Dr. Ayesha Rahman"
-                    >↗</a
-                  >
-                </div>
-              </div>
-            </article>
-            <article class="doctor-card">
-              <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=85"
-                alt="Portrait of Dr. Samiul Karim"
-              />
+              <div class="doctor-avatar" aria-hidden="true">AS</div>
               <div class="doctor-info">
                 <span class="doctor-specialty">CARDIOLOGY</span>
-                <h3>Dr. Samiul Karim</h3>
-                <p>Clear guidance to support a healthier heart.</p>
+                <h3>Dr. A P M Sohrabuzzaman</h3>
+                <p>
+                  Senior Consultant Cardiologist; Director, Cardiac Cath Lab
+                  &amp; Heart Rhythm Services.
+                </p>
                 <div class="doctor-meta">
-                  <span>◷ &nbsp; 30 min visits</span
+                  <span>LABAID Cardiac Hospital</span
                   ><a
-                    href="#appointment"
-                    aria-label="Request an appointment with Dr. Samiul Karim"
-                    >↗</a
+                    href="https://labaid.com.bd/en/doctor/dr.-a-p-m-sohrabuzzaman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Dr. A P M Sohrabuzzaman's official profile"
+                    >Official profile ↗</a
                   >
                 </div>
               </div>
             </article>
             <article class="doctor-card">
-              <img
-                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=85"
-                alt="Portrait of Dr. Nabila Chowdhury"
-              />
+              <div class="doctor-avatar" aria-hidden="true">BC</div>
               <div class="doctor-info">
-                <span class="doctor-specialty">DERMATOLOGY</span>
-                <h3>Dr. Nabila Chowdhury</h3>
-                <p>Support for skin health with a personal touch.</p>
+                <span class="doctor-specialty">CARDIOLOGY</span>
+                <h3>Professor Dr. Baren Chakraborty</h3>
+                <p>
+                  Senior Consultant Cardiologist; Chief Medical Education and
+                  Research.
+                </p>
                 <div class="doctor-meta">
-                  <span>◷ &nbsp; 20 min visits</span
+                  <span>LABAID Cardiac Hospital</span
                   ><a
-                    href="#appointment"
-                    aria-label="Request an appointment with Dr. Nabila Chowdhury"
-                    >↗</a
+                    href="https://labaid.com.bd/en/doctor/prof.-dr.-baren-chakraborty"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Professor Dr. Baren Chakraborty's official profile"
+                    >Official profile ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="doctor-card">
+              <div class="doctor-avatar" aria-hidden="true">MR</div>
+              <div class="doctor-info">
+                <span class="doctor-specialty">CARDIOLOGY &amp; MEDICINE</span>
+                <h3>Dr. Mahbubor Rahman</h3>
+                <p>
+                  Senior Consultant Cardiologist &amp; Medicine Specialist;
+                  In-Charge, Coronary Care Unit.
+                </p>
+                <div class="doctor-meta">
+                  <span>LABAID Cardiac Hospital</span
+                  ><a
+                    href="https://labaid.com.bd/en/doctor/dr.-mahbubor-rahman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Dr. Mahbubor Rahman's official profile"
+                    >Official profile ↗</a
                   >
                 </div>
               </div>
@@ -144,25 +151,24 @@
         <div class="container appointment-layout">
           <div class="appointment-copy">
             <div class="eyebrow">Your next step</div>
-            <h2>Let’s find a time<br />that works for you.</h2>
+            <h2>Appointment form<br />preview.</h2>
             <p>
-              Send us a request and our team will be in touch. This form is a
-              front-end demonstration and does not transmit or store personal
-              information.
+              This sample form does not contact the hospital or save your
+              details. Use the official physician profiles above to check
+              current appointment information.
             </p>
             <div class="appointment-note">
               <span>✳</span
               ><span
-                ><strong>Not sure where to start?</strong><br />Choose general
-                practice and tell us what kind of support you’re looking
-                for.</span
+                ><strong>Demo only</strong><br />No appointment request is sent.
+                Please contact the hospital directly.</span
               >
             </div>
           </div>
           <form class="appointment-form" id="appointment-form">
             <div class="form-title">
-              <strong>Request a visit</strong
-              ><span>All fields are required</span>
+              <strong>Sample request form</strong
+              ><span>Nothing is sent or saved</span>
             </div>
             <label for="patient-name">Your name</label
             ><input
@@ -196,13 +202,12 @@
             <label for="specialty">What kind of care?</label
             ><select id="specialty" name="specialty" required>
               <option value="">Choose a specialty</option>
-              <option>General practice</option>
               <option>Cardiology</option>
-              <option>Dermatology</option>
+              <option>Medicine</option>
               <option>I'm not sure yet</option>
             </select>
             <button class="button button-primary form-submit" type="submit">
-              Send appointment request <span>↗</span>
+              Test demo form <span>↗</span>
             </button>
             <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
           </form>
@@ -216,7 +221,7 @@
             ><span class="brand-mark">m+</span
             ><span>Medi<span class="brand-accent">Expert</span></span></a
           >
-          <p>A little more care, in all the right places.</p>
+          <p>Independent student demo · Bangladesh</p>
         </div>
         <div class="footer-links">
           <div>
@@ -225,15 +230,15 @@
             ><a href="../health">Health library</a>
           </div>
           <div>
-            <strong>Need help?</strong
-            ><a href="../doctors/#appointment">Book an appointment</a
-            ><a href="../health/#disclaimer">Health information</a>
+            <strong>Sources</strong
+            ><a href="#providers">Physician profiles</a
+            ><a href="../health/#disclaimer">WHO health information</a>
           </div>
         </div>
       </div>
       <div class="container footer-bottom">
         <span>© 2026 MediExpert · Student project</span
-        ><span>For learning and demonstration purposes only.</span>
+        ><span>No medical advice, appointment booking, or medicine sales.</span>
       </div>
     </footer>
   </body>

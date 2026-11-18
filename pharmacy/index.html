@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Browse everyday wellness essentials in the MediExpert demonstration pharmacy."
+      content="Review example Bangladesh medicine listings and reference prices from MedEx. This student demo does not sell or deliver medicines."
     />
     <title>Pharmacy — MediExpert</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,8 +38,11 @@
           <a class="active" href="../pharmacy">Pharmacy</a>
           <a href="../health">Health library</a>
         </nav>
-        <a class="nav-cta" href="#appointment"
-          >Book an appointment <span>↗</span></a
+        <a
+          class="nav-cta"
+          href="#products"
+          aria-label="Demo bag, 0 items"
+          >Demo bag <span class="cart-count" data-cart-count>0</span></a
         >
       </div>
     </header>
@@ -48,21 +51,20 @@
         <div class="container page-hero-inner">
           <div>
             <div class="eyebrow">
-              <span class="eyebrow-dot"></span> Everyday care, thoughtfully
-              chosen
+              <span class="eyebrow-dot"></span> Bangladesh medicine references
             </div>
-            <h1>Feel good about<br /><span>feeling good.</span></h1>
+            <h1>Medicine listings,<br /><span>clearly sourced.</span></h1>
             <p>
-              Explore a few everyday wellness essentials, selected with care.
-              Browse the demo shelf below.
+              Browse real product names and reference prices from MedEx. This
+              independent student demo cannot sell or deliver medicines.
             </p>
             <a class="button button-primary" href="#products"
-              >Browse essentials <span>↘</span></a
+              >Browse medicine references <span>↘</span></a
             >
           </div>
           <div class="page-hero-image pharmacy-hero-image">
             <div class="image-caption">
-              <span>✳</span> A little care goes a long way
+              <span>✳</span> Reference listings · prices may change
             </div>
           </div>
         </div>
@@ -71,12 +73,13 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <div class="eyebrow">The MediExpert shelf</div>
-              <h2>Everyday essentials.</h2>
+              <div class="eyebrow">Reference products · Bangladesh</div>
+              <h2>Example medicine listings.</h2>
             </div>
             <p>
-              Demo items for this student project. Always check with a qualified
-              pharmacist before using medicine.
+              Product details and listed prices link to MedEx. This is a demo
+              catalog only; confirm current product and price information with
+              a licensed pharmacy.
             </p>
           </div>
           <div class="shop-toolbar">
@@ -87,28 +90,21 @@
                 data-category-filter="all"
                 aria-pressed="true"
               >
-                All essentials</button
+                All products</button
               ><button
                 class="category-pill"
                 type="button"
-                data-category-filter="wellness"
+                data-category-filter="tablet"
                 aria-pressed="false"
               >
-                Wellness</button
+                Tablets</button
               ><button
                 class="category-pill"
                 type="button"
-                data-category-filter="personal-care"
+                data-category-filter="oral-liquid"
                 aria-pressed="false"
               >
-                Personal care</button
-              ><button
-                class="category-pill"
-                type="button"
-                data-category-filter="otc"
-                aria-pressed="false"
-              >
-                OTC
+                Oral liquids
               </button>
             </div>
             <label class="search-box"
@@ -116,163 +112,94 @@
               ><input
                 id="product-search"
                 type="search"
-                placeholder="Search essentials..."
+                placeholder="Search medicines..."
                 aria-label="Search products"
             /></label>
           </div>
           <div class="product-grid">
             <article
               class="product-card"
-              data-category="wellness"
-              data-product="daily multivitamin wellness"
+              data-category="tablet"
+              data-product="napa 500 mg tablet paracetamol beximco"
             >
               <div class="product-art product-art-green">
-                <span class="product-label">DAILY CARE</span>
+                <span class="product-label">ILLUSTRATIVE ART</span>
                 <div class="bottle bottle-green">
-                  <span>daily<br />multi</span>
+                  <span>500<br />mg</span>
                 </div>
                 <span class="product-deco">✳</span>
               </div>
               <div class="product-info">
-                <div class="product-category">WELLNESS</div>
-                <h3>Daily Multivitamin</h3>
-                <p>A simple addition to a balanced routine.</p>
+                <div class="product-category">TABLET · PARACETAMOL</div>
+                <h3>Napa 500 mg tablet</h3>
+                <p>Beximco Pharmaceuticals PLC · 500 mg tablet.</p>
                 <div class="product-buy">
-                  <strong>$12.00</strong
+                  <strong>৳1.20 each · ৳12 / strip</strong
                   ><button
                     class="add-to-cart"
                     type="button"
-                    data-name="Daily Multivitamin"
+                    data-name="Napa 500 mg tablet"
                   >
-                    Add to bag <span>+</span>
+                    Add to demo bag <span>+</span>
                   </button>
                 </div>
+                <a
+                  class="text-link product-source"
+                  href="https://medex.com.bd/brands/10452/napa-500-mg-tablet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View MedEx listing <span>↗</span></a
+                >
               </div>
             </article>
             <article
               class="product-card"
-              data-category="personal-care"
-              data-product="gentle hand cream personal care"
-            >
-              <div class="product-art product-art-peach">
-                <span class="product-label">SOFT & SIMPLE</span>
-                <div class="tube tube-peach">
-                  <span>gentle<br />hand cream</span>
-                </div>
-                <span class="product-deco">✿</span>
-              </div>
-              <div class="product-info">
-                <div class="product-category">PERSONAL CARE</div>
-                <h3>Gentle Hand Cream</h3>
-                <p>A comforting, everyday moisturizing cream.</p>
-                <div class="product-buy">
-                  <strong>$8.50</strong
-                  ><button
-                    class="add-to-cart"
-                    type="button"
-                    data-name="Gentle Hand Cream"
-                  >
-                    Add to bag <span>+</span>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article
-              class="product-card"
-              data-category="wellness"
-              data-product="vitamin c wellness"
+              data-category="oral-liquid"
+              data-product="napa syrup 120 mg 5 ml paracetamol beximco"
             >
               <div class="product-art product-art-yellow">
-                <span class="product-label">BRIGHT DAYS</span>
+                <span class="product-label">ILLUSTRATIVE ART</span>
                 <div class="bottle bottle-yellow">
-                  <span>vitamin<br />c</span>
+                  <span>120 mg/<br />5 ml</span>
                 </div>
                 <span class="product-deco">✳</span>
               </div>
               <div class="product-info">
-                <div class="product-category">WELLNESS</div>
-                <h3>Vitamin C</h3>
-                <p>A familiar supplement for your wellness shelf.</p>
+                <div class="product-category">ORAL LIQUID · PARACETAMOL</div>
+                <h3>Napa syrup 120 mg/5 ml</h3>
+                <p>Beximco Pharmaceuticals PLC · listed in 60 ml and 100 ml bottles.</p>
                 <div class="product-buy">
-                  <strong>$10.00</strong
+                  <strong>৳35 / 60 ml · ৳50 / 100 ml</strong
                   ><button
                     class="add-to-cart"
                     type="button"
-                    data-name="Vitamin C"
+                    data-name="Napa syrup 120 mg/5 ml"
                   >
-                    Add to bag <span>+</span>
+                    Add to demo bag <span>+</span>
                   </button>
                 </div>
-              </div>
-            </article>
-            <article
-              class="product-card"
-              data-category="personal-care"
-              data-product="mineral sunscreen personal care"
-            >
-              <div class="product-art product-art-blue">
-                <span class="product-label">DAILY SHIELD</span>
-                <div class="tube tube-blue">
-                  <span>mineral<br />sunscreen</span>
-                </div>
-                <span class="product-deco">☼</span>
-              </div>
-              <div class="product-info">
-                <div class="product-category">PERSONAL CARE</div>
-                <h3>Mineral Sunscreen</h3>
-                <p>Daily sun protection for outdoor moments.</p>
-                <div class="product-buy">
-                  <strong>$14.00</strong
-                  ><button
-                    class="add-to-cart"
-                    type="button"
-                    data-name="Mineral Sunscreen"
-                  >
-                    Add to bag <span>+</span>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article
-              class="product-card"
-              data-category="otc"
-              data-product="saline nasal spray otc pharmacy"
-            >
-              <div class="product-art product-art-blue">
-                <span class="product-label">PHARMACY ESSENTIAL</span>
-                <div class="bottle bottle-saline">
-                  <span>saline<br />nasal spray</span>
-                </div>
-                <span class="product-deco">✳</span>
-              </div>
-              <div class="product-info">
-                <div class="product-category">OTC DEMO</div>
-                <h3>Saline Nasal Spray</h3>
-                <p>Illustrative over-the-counter pharmacy item.</p>
-                <div class="product-buy">
-                  <strong>$6.00</strong
-                  ><button
-                    class="add-to-cart"
-                    type="button"
-                    data-name="Saline Nasal Spray"
-                  >
-                    Add to bag <span>+</span>
-                  </button>
-                </div>
+                <a
+                  class="text-link product-source"
+                  href="https://medex.com.bd/brands/28439/napa-120-mg-syrup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View MedEx listing <span>↗</span></a
+                >
               </div>
             </article>
           </div>
           <p class="empty-search" id="empty-search" hidden>
-            No essentials match that search. Try another word.
+            No medicines match that search. Try another word.
           </p>
           <div class="pharmacy-disclaimer">
             <span>ⓘ</span>
             <p>
-              <strong>A note about medicines</strong><br />This is a school
-              project demo, not a real pharmacy. Products and prices are
-              illustrative, and this demo cannot process orders. Always follow
-              product labeling and ask a qualified pharmacist or healthcare
-              professional if you have questions about a medicine.
+              <strong>Demo catalog only</strong><br />These are real product
+              listings with reference prices shown by MedEx; prices and
+              availability can change. Product artwork is illustrative. The
+              demo bag does not place an order, and this site does not sell or
+              deliver medicines. Ask a licensed pharmacist or healthcare
+              professional about medicines.
             </p>
           </div>
         </div>
@@ -286,7 +213,7 @@
             ><span class="brand-mark">m+</span
             ><span>Medi<span class="brand-accent">Expert</span></span></a
           >
-          <p>A little more care, in all the right places.</p>
+          <p>Independent student demo · Bangladesh</p>
         </div>
         <div class="footer-links">
           <div>
@@ -295,15 +222,15 @@
             ><a href="../health">Health library</a>
           </div>
           <div>
-            <strong>Need help?</strong
-            ><a href="../doctors/#appointment">Book an appointment</a
-            ><a href="../health/#disclaimer">Health information</a>
+            <strong>Sources</strong
+            ><a href="../doctors/#providers">Physician profiles</a
+            ><a href="../health/#disclaimer">WHO health information</a>
           </div>
         </div>
       </div>
       <div class="container footer-bottom">
         <span>© 2026 MediExpert · Student project</span
-        ><span>For learning and demonstration purposes only.</span>
+        ><span>No medical advice, appointment booking, or medicine sales.</span>
       </div>
     </footer>
   </body>

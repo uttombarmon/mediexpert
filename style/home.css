@@ -55,13 +55,18 @@
   display: flex;
   padding-left: 4px;
 }
-.avatar-stack img {
+.avatar-stack span {
   width: 31px;
   height: 31px;
   margin-left: -5px;
+  display: grid;
+  place-items: center;
   border: 2px solid var(--mint-light);
   border-radius: 50%;
-  object-fit: cover;
+  background: var(--green);
+  color: white;
+  font-size: 8px;
+  font-weight: 700;
 }
 .hero-proof strong,
 .hero-proof span {

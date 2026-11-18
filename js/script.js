@@ -22,7 +22,8 @@ if (appointmentForm) {
   appointmentForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const feedback = document.querySelector("#form-feedback");
-    feedback.textContent = "Thanks! Your demo request is ready. No information has been sent.";
+    feedback.textContent =
+      "Demo only. No appointment request has been sent or stored.";
     appointmentForm.reset();
     dateInput.min = today;
   });
@@ -70,14 +71,23 @@ if (cartCount) {
   const storageKey = "mediexpert-cart-count";
   const savedCount = Number.parseInt(localStorage.getItem(storageKey) || "0", 10);
   let count = Number.isFinite(savedCount) && savedCount >= 0 ? savedCount : 0;
+  const updateCartLabel = () => {
+    const itemLabel = count === 1 ? "item" : "items";
+    cartCount.closest("a")?.setAttribute(
+      "aria-label",
+      `Demo bag, ${count} ${itemLabel}`,
+    );
+  };
   cartCount.textContent = String(count);
+  updateCartLabel();
 
   document.querySelectorAll(".add-to-cart").forEach((button) => {
     button.addEventListener("click", () => {
       count += 1;
       cartCount.textContent = String(count);
       localStorage.setItem(storageKey, String(count));
-      cartToast.textContent = `${button.dataset.name} added to your demo bag`;
+      updateCartLabel();
+      cartToast.textContent = `${button.dataset.name} added to demo bag. No purchase will be made.`;
       cartToast.classList.add("visible");
       window.clearTimeout(cartToast.timeoutId);
       cartToast.timeoutId = window.setTimeout(() => {

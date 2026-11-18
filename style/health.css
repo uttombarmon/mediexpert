@@ -1,0 +1,165 @@
+.health-hero-image {
+  background-image:
+    linear-gradient(0deg, rgba(21, 51, 43, 0.22), transparent 45%),
+    url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=88");
+}
+.article-section {
+  padding-top: 75px;
+}
+.article-topic {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.article-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.article-art {
+  position: relative;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.article-art-peach {
+  background: #f9eee8;
+}
+.article-art-green {
+  background: #e8f1e9;
+}
+.article-art-blue {
+  background: #e9edf4;
+}
+.article-number {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: #81958a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.article-symbol {
+  width: 81px;
+  height: 81px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(43, 112, 97, 0.25);
+  border-radius: 50%;
+  color: var(--green);
+  font:
+    44px Georgia,
+    serif;
+}
+.article-content {
+  padding: 16px;
+}
+.article-topic {
+  font-size: 7px;
+}
+.article-content h3 {
+  margin: 6px 0;
+  font: 700 15px/1.4 var(--font-heading);
+}
+.article-content p {
+  min-height: 53px;
+  margin-bottom: 10px;
+  color: #849089;
+  font-size: 9px;
+  line-height: 1.8;
+}
+.reading-notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+.reading-notes article {
+  scroll-margin-top: 95px;
+  border-top: 2px solid var(--mint);
+  padding-top: 14px;
+}
+.reading-notes article > span {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.reading-notes h3 {
+  margin: 7px 0;
+  font: 700 14px var(--font-heading);
+}
+.reading-notes p {
+  margin: 0;
+  color: #7c8982;
+  font-size: 10px;
+  line-height: 1.85;
+}
+.health-disclaimer {
+  display: flex;
+  gap: 14px;
+  margin-top: 35px;
+  border: 1px solid #e8eadd;
+  border-radius: 4px;
+  padding: 17px;
+  background: #fbfaf3;
+  scroll-margin-top: 95px;
+}
+.disclaimer-icon {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  flex: none;
+  place-items: center;
+  border: 1px solid #d5bd79;
+  border-radius: 50%;
+  color: #a18943;
+  font:
+    italic 14px Georgia,
+    serif;
+}
+.health-disclaimer strong {
+  font-size: 11px;
+}
+.health-disclaimer p {
+  margin: 4px 0 0;
+  color: #7c8982;
+  font-size: 10px;
+  line-height: 1.8;
+}
+@media (max-width: 680px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+  .article-card {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+  }
+  .article-art {
+    height: 100%;
+    min-height: 185px;
+  }
+  .article-symbol {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+  .article-content {
+    padding: 14px 12px;
+  }
+  .article-content p {
+    min-height: 0;
+  }
+  .reading-notes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

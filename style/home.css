@@ -88,7 +88,7 @@
   inset: 0 28px 0 38px;
   border-radius: 170px 170px 14px 14px;
   background: #d7e4dc
-    url("https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&q=88")
+    url("https://labaid.com.bd/files/images/1700978846.jpg")
     center 35% / cover;
 }
 .hero-photo::after {
@@ -292,12 +292,12 @@
 .doctor-image {
   background-image:
     linear-gradient(90deg, #f6f1e9 0%, transparent 35%),
-    url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=650&q=85");
+    url("https://labaid.com.bd/files/images/1700980266.jpg");
 }
 .wellness-image {
   background-image:
     linear-gradient(90deg, #eaf2ed 0%, transparent 35%),
-    url("https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=650&q=85");
+    url("https://medex.com.bd/storage/images/packaging/napa-120-mg-syrup-2490148577-ZLDaH1pmjy.webp");
 }
 .quote-band {
   background: var(--green);

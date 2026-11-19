@@ -4,9 +4,16 @@
   letter-spacing: -1.6px;
 }
 .doctor-hero-image {
-  background-image:
-    linear-gradient(0deg, rgba(21, 51, 43, 0.2), transparent 45%),
-    url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=88");
+  background: #eaf3ed;
+}
+.doctor-hero-portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center 28%;
 }
 .doctor-list-section {
   padding-top: 75px;
@@ -19,21 +26,16 @@
 .doctor-card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: white;
 }
-.doctor-avatar {
-  width: 68px;
-  height: 68px;
-  display: grid;
-  flex: none;
-  place-items: center;
-  margin: 20px 18px 0;
-  border-radius: 50%;
-  background: var(--mint);
-  color: var(--green);
-  font: 700 19px var(--font-heading);
+.doctor-portrait {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center 28%;
 }
 .doctor-info {
   padding: 18px 18px 16px;

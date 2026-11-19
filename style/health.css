@@ -1,7 +1,8 @@
 .health-hero-image {
-  background-image:
-    linear-gradient(0deg, rgba(21, 51, 43, 0.22), transparent 45%),
-    url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=88");
+  background:
+    radial-gradient(circle at 68% 32%, rgba(229, 149, 120, 0.5) 0 7%, transparent 7.5%),
+    radial-gradient(circle at 68% 32%, transparent 0 18%, rgba(43, 112, 97, 0.12) 18.2% 18.8%, transparent 19%),
+    linear-gradient(135deg, #e8f2ed, #f8f2e9);
 }
 .article-section {
   padding-top: 75px;
